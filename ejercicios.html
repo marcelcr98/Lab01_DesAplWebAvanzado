@@ -1,0 +1,59 @@
+<html>
+    <head>
+    </head>
+        <body>
+            <script type="text/javascript">
+            var numero;
+            numero=prompt('Ingrese valor del numero:','');
+            if ( numero == 0)
+                {
+                    document.write('El numero introducido es nulo');
+                }
+
+            else if (numero % 2 == 0)
+                {
+                document.write('El numero introducido es par');
+                }
+
+            else {document.write('El numero introducido es impar');}
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+
+            <form method="post" action="par_impar2.php">
+                Ingrese el valor del numero:
+                <input type="text" name="numero">
+                <br>
+                <input type="submit" value="confirmar">
+            </form>
+
+            <br><br>
+
+            <h2>PROBLEMA 4</h2>
+
+            <script>
+                function multiple(valor, multiple)
+                {
+                    resto = valor % multiple;
+                    if(resto==0)
+                        return true;
+                    else
+                        return false;
+                }
+                var multiples_7=[];
+                var multiples_5=[];
+                var multiples_23=[];
+                for(var i=1;i<=351;i++)
+                {
+                    if(multiple(i,7))
+                        multiples_7.push(i);
+    
+                }
+                document.write("Los multiplos de 7 son: ",multiples_7);
+            </script>
+       
+        </body>
+</html>
